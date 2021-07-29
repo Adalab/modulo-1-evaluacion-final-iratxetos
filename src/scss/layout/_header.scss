@@ -15,6 +15,10 @@
   // display: flex;
   // flex-direction: column;
 
+  @media all and (min-width: 768px) {
+    background-position: unset;
+  }
+
   &__menu--image {
     width: 44px;
     height: 44px;
@@ -31,6 +35,10 @@
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
+
+    @media all and (min-width: 1280px) {
+      padding-top: 20vh;
+    }
   }
 
   &__title {
@@ -39,6 +47,17 @@
     font-size: $size-font-title;
     color: $color-white;
     line-height: $line-height-title;
+
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 102px;
+    }
+
+    @media all and (min-width: 1280px) {
+      font-size: 100px;
+      line-height: 132px;
+      word-spacing: 100vw;
+    }
   }
 
   &__subtitle {
@@ -46,6 +65,10 @@
     font-size: $size-font-little;
     color: $color-white;
     margin-top: 10px;
+
+    @media all and (min-width: 768px) {
+      font-size: $size-font-title-text;
+    }
   }
 
   &__row {
