@@ -63,6 +63,7 @@ body {
     #reasons {
       @include mixh2();
     }
+
     .button {
       font-family: $font-main;
       font-size: $size-font-body;
