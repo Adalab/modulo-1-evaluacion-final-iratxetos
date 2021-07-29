@@ -1,21 +1,46 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 30px;
+  background-color: $color-dark-grey-blue;
+  justify-self: center;
+  text-align: center;
+  padding: 60px 15px 45px 15px;
+
+  &__menu--nav li a {
+    text-transform: uppercase;
+    font-size: $size-font-footer;
+    line-height: $line-height;
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &__social--nav li a {
+    text-transform: uppercase;
+    font-size: $size-font-footer;
+    line-height: $line-height;
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &__copy {
+    color: $color-white;
+  }
 }
 
 @media all and (min-width: 768px) {
   .footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .footer_menu {
+  &__menu {
     grid-column: 2/3;
   }
 
-  .footer_social {
+  &__social {
     grid-column: 3/4;
   }
 
-  .footer_copy {
+  &__copy {
     grid-column: 1/2;
   }
 }
