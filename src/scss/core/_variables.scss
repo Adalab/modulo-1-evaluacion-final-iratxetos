@@ -17,7 +17,6 @@ $color-cerulean: #0271bc;
 $color-dark-grey-blue: #304268;
 
 // mixins
-
 @mixin mixh2() {
   font-family: $font-title;
   font-size: $size-font-title-text;
@@ -38,6 +37,5 @@ $color-dark-grey-blue: #304268;
   height: 45px;
   border-radius: 50%;
   background-color: $color-white;
-  padding: 15px 13px;
+  padding: 12px 10px;
 }
-// $size-margin-h-mobile: 10px;

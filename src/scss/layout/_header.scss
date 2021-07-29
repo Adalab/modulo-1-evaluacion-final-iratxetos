@@ -12,8 +12,8 @@
   background-size: cover;
   /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
   background-color: $color-dark-grey-blue;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 
   &__menu--image {
     width: 44px;
@@ -50,7 +50,7 @@
 
   &__row {
     @include mixarrow();
-    height: 15em;
+    height: 7em;
   }
 
   &__row--image {
