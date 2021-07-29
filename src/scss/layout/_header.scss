@@ -1,4 +1,5 @@
 .header {
+  width: 100%;
   height: 100vh;
   background-image: url(../images/cover.jpg);
   /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
@@ -10,5 +11,54 @@
   /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
   background-size: cover;
   /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
-  background-color: #699999;
+  background-color: $color-dark-grey-blue;
+  display: flex;
+  flex-direction: column;
+
+  &__menu--image {
+    width: 44px;
+    height: 44px;
+    background-color: $color-cerulean;
+    padding: 15px 14px;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  &__text {
+    justify-self: center;
+    text-align: center;
+    padding-top: 50vh;
+  }
+
+  &__title {
+    font-family: $font-title;
+    text-transform: uppercase;
+    font-size: $size-font-title;
+    color: $color-white;
+    line-height: $line-height-title;
+  }
+
+  &__subtitle {
+    font-family: $font-main;
+    font-size: $size-font-little;
+    color: $color-white;
+    margin-top: 10px;
+  }
+
+  &__row {
+    // margin-left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding-top: 20%;
+    height: 15em;
+  }
+
+  &__row--image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $color-white;
+    padding: 15px 13px;
+  }
 }
