@@ -1,0 +1,15 @@
+.article {
+  text-align: center;
+  margin: 45px 55px 0px 55px;
+
+  .article__title {
+    font-family: $font-title;
+    line-height: $line-height;
+    padding: 2px;
+  }
+
+  .article__text {
+    font-family: $font-main;
+    line-height: $line-height;
+  }
+}

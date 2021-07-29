@@ -16,5 +16,13 @@ $color-light-blue: #8ccbea;
 $color-cerulean: #0271bc;
 $color-dark-grey-blue: #304268;
 
-// // sizes
+// mixins
+
+@mixin mixh2() {
+  font-family: $font-title;
+  font-size: $size-font-title-text;
+  line-height: $line-height;
+  text-transform: capitalize;
+}
+
 // $size-margin-h-mobile: 10px;

@@ -2,3 +2,79 @@ body {
   font-family: $font-main;
   font-size: 18px;
 }
+
+.main {
+  // padding-left: 15px;
+  // padding-right: 15px;
+
+  &__section1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+
+    .tips {
+      font-family: $font-main;
+      font-size: $size-font-little;
+      line-height: $line-height;
+      color: $color-light-blue;
+      text-transform: capitalize;
+    }
+
+    .h2 {
+      @include mixh2();
+    }
+
+    .p {
+      font-family: $font-main;
+      line-height: $line-height;
+      color: #4a4a4a;
+      padding-top: 15px;
+      padding-bottom: 30px;
+    }
+
+    .button {
+      font-family: $font-main;
+      font-size: $size-font-body;
+      font-weight: 500;
+      line-height: 45px;
+      color: $color-bright-orange;
+      text-transform: capitalize;
+      border-radius: 2em;
+      border-width: 2px;
+      border-color: $color-bright-orange;
+      border-style: solid; /*evitar el degradé del borde*/
+      background-color: transparent;
+      padding: 0 25px;
+    }
+  }
+
+  &__section2 {
+    background-color: #eff9ff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #reasons {
+      @include mixh2();
+    }
+    .button {
+      font-family: $font-main;
+      font-size: $size-font-body;
+      font-weight: 500;
+      line-height: 45px;
+      color: $color-white;
+      text-transform: capitalize;
+      border-radius: 2em;
+      border-style: none;
+      background-color: $color-bright-orange;
+      padding: 0 25px;
+      margin-top: 45px;
+    }
+  }
+}
