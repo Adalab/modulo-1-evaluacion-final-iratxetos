@@ -6,8 +6,10 @@ $size-font-subtitle: 26px;
 $size-font-title-text: 24px;
 $size-font-body: 20px;
 $size-font-little: 16px;
+$size-font-extra-little: 14px;
 $line-height-title: 55px;
 $line-height: 30px;
+$bigger-line-height: 45px;
 
 // colors
 $color-bright-orange: #f26002;
@@ -22,6 +24,10 @@ $color-dark-grey-blue: #304268;
   font-size: $size-font-title-text;
   line-height: $line-height;
   text-transform: capitalize;
+  @media all and (min-width: 768px) {
+    line-height: $bigger-line-height;
+    font-size: 26px;
+  }
 }
 
 @mixin mixarrow {

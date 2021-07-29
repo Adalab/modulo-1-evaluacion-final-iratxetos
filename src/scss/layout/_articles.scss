@@ -1,15 +1,26 @@
 .article {
   text-align: center;
-  margin: 45px 55px 0px 55px;
+  margin: 45px 55px 0px;
+  @media all and (min-width: 768px) {
+    margin: 45px 20px 14px;
+  }
 
   .article__title {
     font-family: $font-title;
     line-height: $line-height;
     padding: 2px;
+
+    @media all and (min-width: 768px) {
+      font-size: $size-font-title-text;
+    }
   }
 
   .article__text {
     font-family: $font-main;
     line-height: $line-height;
+
+    @media all and (min-width: 768px) {
+      font-size: $size-font-body;
+    }
   }
 }

@@ -8,13 +8,20 @@
   text-align: center;
   padding: 5px 15px 45px 15px;
 
+  // @media all and (min-width: 768px) {
+  //   padding: 50px 15px;
+
   &__arrow {
-    @include mixarrow();
+    // @include mixarrow();
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: translateY(-25px);
   }
 
   &__arrow--image {
     @include mixarrowimage();
+    // position: fixed;
   }
 
   &__menu--nav li a {
@@ -44,26 +51,33 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 5% 95%;
     row-gap: 0;
+    padding: 45px 15px 30px 40px;
 
     &__arrow {
       grid-column: 1/4;
       grid-row: 1/2;
-      transform: translateY(-60px);
+      transform: translateY(-50px);
     }
 
     &__menu {
       grid-column: 2/3;
       grid-row: 2/3;
+      justify-self: left;
+      text-align: left;
     }
 
     &__social {
       grid-column: 3/4;
       grid-row: 2/3;
+      justify-self: left;
+      text-align: left;
     }
 
     &__copy {
       grid-column: 1/2;
       grid-row: 2/3;
+      justify-self: left;
+      text-align: left;
     }
   }
 }

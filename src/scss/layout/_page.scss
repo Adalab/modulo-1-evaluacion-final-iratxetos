@@ -13,9 +13,16 @@ body {
     padding-top: 30px;
     padding-bottom: 45px;
 
+    @media all and (min-width: 768px) {
+      padding-left: 39px;
+      padding-right: 39px;
+      padding-top: 30px;
+      padding-bottom: 60px;
+    }
+
     .tips {
       font-family: $font-main;
-      font-size: $size-font-little;
+      font-size: $size-font-extra-little;
       line-height: $line-height;
       color: $color-light-blue;
       text-transform: capitalize;
@@ -31,6 +38,11 @@ body {
       color: #4a4a4a;
       padding-top: 15px;
       padding-bottom: 30px;
+
+      @media all and (min-width: 768px) {
+        padding-top: 30px;
+        font-size: $size-font-body;
+      }
     }
 
     .button {
@@ -46,6 +58,10 @@ body {
       border-style: solid; /*evitar el degradé del borde*/
       background-color: transparent;
       padding: 0 25px;
+
+      @media all and (min-width: 768px) {
+        padding: 0 33px;
+      }
     }
   }
 
@@ -55,10 +71,20 @@ body {
     padding-right: 15px;
     padding-top: 30px;
     padding-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 45px;
+
+      @media all and (min-width: 768px) {
+        flex-direction: row;
+        margin-bottom: 60px;
+      }
+    }
 
     #reasons {
       @include mixh2();
@@ -75,7 +101,6 @@ body {
       border-style: none;
       background-color: $color-bright-orange;
       padding: 0 25px;
-      margin-top: 45px;
     }
   }
 }
