@@ -49,19 +49,11 @@
   }
 
   &__row {
-    // margin-left: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // padding-top: 20%;
+    @include mixarrow();
     height: 15em;
   }
 
   &__row--image {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: $color-white;
-    padding: 15px 13px;
+    @include mixarrowimage();
   }
 }

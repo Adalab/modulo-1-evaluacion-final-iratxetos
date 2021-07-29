@@ -25,4 +25,19 @@ $color-dark-grey-blue: #304268;
   text-transform: capitalize;
 }
 
+@mixin mixarrow {
+  // margin-left: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding-top: 20%;
+}
+
+@mixin mixarrowimage {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $color-white;
+  padding: 15px 13px;
+}
 // $size-margin-h-mobile: 10px;

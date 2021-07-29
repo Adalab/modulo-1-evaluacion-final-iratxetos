@@ -1,11 +1,21 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 10% 30% 25% 10%;
   row-gap: 30px;
   background-color: $color-dark-grey-blue;
   justify-self: center;
   text-align: center;
-  padding: 60px 15px 45px 15px;
+  padding: 5px 15px 45px 15px;
+
+  &__arrow {
+    @include mixarrow();
+    transform: translateY(-25px);
+  }
+
+  &__arrow--image {
+    @include mixarrowimage();
+  }
 
   &__menu--nav li a {
     text-transform: uppercase;
@@ -32,16 +42,28 @@
 @media all and (min-width: 768px) {
   .footer {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  &__menu {
-    grid-column: 2/3;
-  }
+    grid-template-rows: 5% 95%;
+    row-gap: 0;
 
-  &__social {
-    grid-column: 3/4;
-  }
+    &__arrow {
+      grid-column: 1/4;
+      grid-row: 1/2;
+      transform: translateY(-60px);
+    }
 
-  &__copy {
-    grid-column: 1/2;
+    &__menu {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    &__social {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+
+    &__copy {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
   }
 }
