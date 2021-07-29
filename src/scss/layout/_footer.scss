@@ -1,0 +1,21 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer_menu {
+    grid-column: 2/3;
+  }
+
+  .footer_social {
+    grid-column: 3/4;
+  }
+
+  .footer_copy {
+    grid-column: 1/2;
+  }
+}
