@@ -26,34 +26,34 @@ body {
       padding-top: 60px;
       padding-bottom: 60px;
     }
-  }
 
-  .tips {
-    font-family: $font-main;
-    font-size: $size-font-extra-little;
-    line-height: $line-height;
-    color: $color-light-blue;
-    text-transform: capitalize;
+    .tips {
+      font-family: $font-main;
+      font-size: $size-font-extra-little;
+      line-height: $line-height;
+      color: $color-light-blue;
+      text-transform: capitalize;
 
-    @media all and (min-width: 1280px) {
-      font-size: $size-font-little;
+      @media all and (min-width: 1280px) {
+        font-size: $size-font-little;
+      }
     }
-  }
 
-  .h2 {
-    @include mixh2();
-  }
+    .h2 {
+      @include mixh2();
+    }
 
-  .p {
-    font-family: $font-main;
-    line-height: $line-height;
-    color: #4a4a4a;
-    padding-top: 15px;
-    padding-bottom: 30px;
+    .p {
+      font-family: $font-main;
+      line-height: $line-height;
+      color: #4a4a4a;
+      padding-top: 15px;
+      padding-bottom: 30px;
 
-    @media all and (min-width: 768px) {
-      padding-top: 30px;
-      font-size: $size-font-body;
+      @media all and (min-width: 768px) {
+        padding-top: 30px;
+        font-size: $size-font-body;
+      }
     }
   }
 
@@ -70,7 +70,11 @@ body {
     border-style: solid; /*evitar el degradé del borde*/
     background-color: transparent;
     padding: 0 25px;
-    position: relative;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-bright-orange;
+    }
 
     @media all and (min-width: 768px) {
       padding: 0 33px;
@@ -79,20 +83,6 @@ body {
     @media all and (min-width: 1280px) {
       padding: 0 67px;
     }
-  }
-
-  .button:before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 0px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 1s ease;
-  }
-  .button:hover:before {
-    width: 100%;
   }
 
   &__section2 {
@@ -132,9 +122,15 @@ body {
       color: $color-white;
       text-transform: capitalize;
       border-radius: 2em;
-      border-style: none;
+      border-style: solid;
       background-color: $color-bright-orange;
       padding: 0 25px;
+
+      &:hover {
+        color: $color-bright-orange;
+        background-color: $color-white;
+        border-color: $color-bright-orange;
+      }
 
       @media all and (min-width: 768px) {
         padding: 0 33px;
