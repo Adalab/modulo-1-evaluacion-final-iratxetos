@@ -70,6 +70,7 @@ body {
     border-style: solid; /*evitar el degradé del borde*/
     background-color: transparent;
     padding: 0 25px;
+    position: relative;
 
     @media all and (min-width: 768px) {
       padding: 0 33px;
@@ -78,6 +79,20 @@ body {
     @media all and (min-width: 1280px) {
       padding: 0 67px;
     }
+  }
+
+  .button:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 1s ease;
+  }
+  .button:hover:before {
+    width: 100%;
   }
 
   &__section2 {
