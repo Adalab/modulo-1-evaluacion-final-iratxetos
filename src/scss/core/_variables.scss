@@ -43,8 +43,10 @@ $color-dark-grey-blue: #304268;
 }
 
 @mixin mixarrowimage {
-  width: 45px;
-  height: 45px;
+  // width: 45px;
+  // height: 45px;
+  width: 2.813rem;
+  height: 2.813rem;
   border-radius: 50%;
   background-color: $color-white;
   padding: 12px 10px;

@@ -1,4 +1,4 @@
-.header {
+.hero {
   width: 100%;
   height: 100vh;
   background-image: url(../images/cover.jpg);
@@ -14,35 +14,31 @@
   background-color: $color-dark-grey-blue;
   // display: flex;
   // flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media all and (min-width: 768px) {
-    background-position: unset;
+    background-position: center unset; //No se corte la torre
   }
 
-  &__menu--image {
+  &__menu {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__menu--burger {
     width: 44px;
     height: 44px;
     background-color: $color-cerulean;
     padding: 15px 14px;
-    // justify-content: center;
-    // align-items: center;
   }
 
   &__text {
-    justify-self: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding-top: 45vh;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-
-    @media all and (min-width: 768px) {
-      padding-top: 35vh;
-    }
-
-    @media all and (min-width: 1280px) {
-      padding-top: 20vh;
-    }
+    justify-content: flex-end;
   }
 
   &__title {
@@ -51,16 +47,17 @@
     font-size: $size-font-title;
     color: $color-white;
     line-height: $line-height-title;
+    word-spacing: 100vw;
+    margin: 10px 15px;
 
     @media all and (min-width: 768px) {
       font-size: 80px;
       line-height: 102px;
-      word-spacing: 100vw;
     }
 
     @media all and (min-width: 1280px) {
-      font-size: 100px;
-      line-height: 132px;
+      font-size: 6.25rem;
+      line-height: 1em;
     }
   }
 
@@ -68,19 +65,23 @@
     font-family: $font-main;
     font-size: $size-font-little;
     color: $color-white;
-    margin: 10px 0;
+    margin: 10px 15px;
 
     @media all and (min-width: 768px) {
       font-size: $size-font-title-text;
+    }
+
+    @media all and (min-width: 1280px) {
+      font-size: 1.5rem;
     }
   }
 
   &__row {
     @include mixarrow();
-    height: 7em;
   }
 
   &__row--image {
     @include mixarrowimage();
+    margin: 40px;
   }
 }
