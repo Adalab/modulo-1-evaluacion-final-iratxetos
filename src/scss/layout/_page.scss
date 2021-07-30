@@ -20,48 +20,63 @@ body {
       padding-bottom: 60px;
     }
 
-    .tips {
-      font-family: $font-main;
-      font-size: $size-font-extra-little;
-      line-height: $line-height;
-      color: $color-light-blue;
-      text-transform: capitalize;
+    @media all and (min-width: 1280px) {
+      padding-left: 275px;
+      padding-right: 275px;
+      padding-top: 60px;
+      padding-bottom: 60px;
     }
+  }
 
-    .h2 {
-      @include mixh2();
+  .tips {
+    font-family: $font-main;
+    font-size: $size-font-extra-little;
+    line-height: $line-height;
+    color: $color-light-blue;
+    text-transform: capitalize;
+
+    @media all and (min-width: 1280px) {
+      font-size: $size-font-little;
     }
+  }
 
-    .p {
-      font-family: $font-main;
-      line-height: $line-height;
-      color: #4a4a4a;
-      padding-top: 15px;
-      padding-bottom: 30px;
+  .h2 {
+    @include mixh2();
+  }
 
-      @media all and (min-width: 768px) {
-        padding-top: 30px;
-        font-size: $size-font-body;
-      }
-    }
+  .p {
+    font-family: $font-main;
+    line-height: $line-height;
+    color: #4a4a4a;
+    padding-top: 15px;
+    padding-bottom: 30px;
 
-    .button {
-      font-family: $font-main;
+    @media all and (min-width: 768px) {
+      padding-top: 30px;
       font-size: $size-font-body;
-      font-weight: 500;
-      line-height: 45px;
-      color: $color-bright-orange;
-      text-transform: capitalize;
-      border-radius: 2em;
-      border-width: 2px;
-      border-color: $color-bright-orange;
-      border-style: solid; /*evitar el degradé del borde*/
-      background-color: transparent;
-      padding: 0 25px;
+    }
+  }
 
-      @media all and (min-width: 768px) {
-        padding: 0 33px;
-      }
+  .button {
+    font-family: $font-main;
+    font-size: $size-font-body;
+    font-weight: 500;
+    line-height: 45px;
+    color: $color-bright-orange;
+    text-transform: capitalize;
+    border-radius: 2em;
+    border-width: 2px;
+    border-color: $color-bright-orange;
+    border-style: solid; /*evitar el degradé del borde*/
+    background-color: transparent;
+    padding: 0 25px;
+
+    @media all and (min-width: 768px) {
+      padding: 0 33px;
+    }
+
+    @media all and (min-width: 1280px) {
+      padding: 0 67px;
     }
   }
 
@@ -72,6 +87,10 @@ body {
     padding-top: 30px;
     padding-bottom: 60px;
     text-align: center;
+
+    @media all and (min-width: 1280px) {
+      padding-top: 60px;
+    }
 
     .container {
       display: flex;
@@ -101,6 +120,14 @@ body {
       border-style: none;
       background-color: $color-bright-orange;
       padding: 0 25px;
+
+      @media all and (min-width: 768px) {
+        padding: 0 33px;
+      }
+
+      @media all and (min-width: 1280px) {
+        padding: 0 63px;
+      }
     }
   }
 }

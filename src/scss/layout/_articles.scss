@@ -1,8 +1,13 @@
 .article {
   text-align: center;
   margin: 45px 55px 0px;
+
   @media all and (min-width: 768px) {
     margin: 45px 20px 14px;
+  }
+
+  @media all and (min-width: 1280px) {
+    margin: 45px 85px 60px;
   }
 
   .article__title {

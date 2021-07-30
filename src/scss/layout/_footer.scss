@@ -51,7 +51,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 5% 95%;
     row-gap: 0;
-    padding: 45px 15px 30px 40px;
+    padding: 45px 40px 35px 40px;
 
     &__arrow {
       grid-column: 1/4;
@@ -79,5 +79,11 @@
       justify-self: left;
       text-align: left;
     }
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .footer {
+    padding: 45px 370px 35px 370px;
   }
 }

@@ -28,6 +28,10 @@ $color-dark-grey-blue: #304268;
     line-height: $bigger-line-height;
     font-size: 26px;
   }
+  @media all and (min-width: 1280px) {
+    line-height: $bigger-line-height;
+    font-size: 32px;
+  }
 }
 
 @mixin mixarrow {
