@@ -4,9 +4,6 @@ body {
 }
 
 .main {
-  // padding-left: 15px;
-  // padding-right: 15px;
-
   &__section1 {
     padding-left: 15px;
     padding-right: 15px;
@@ -25,6 +22,10 @@ body {
       padding-right: 275px;
       padding-top: 60px;
       padding-bottom: 60px;
+    }
+    //Super size screen
+    @media all and (min-width: 1800px) {
+      padding: 100px 10%;
     }
 
     .tips {
@@ -69,7 +70,7 @@ body {
     border-color: $color-bright-orange;
     border-style: solid; /*evitar el degradé del borde*/
     background-color: transparent;
-    padding: 0 25px;
+    padding: 1px 25px;
 
     &:hover {
       color: $color-white;
@@ -87,44 +88,46 @@ body {
 
   &__section2 {
     background-color: #eff9ff;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 30px 15px 60px;
+    row-gap: 45px;
+
+    @media all and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 10% 1fr 20%;
+      column-gap: 30px;
+      padding: 30px 35px 60px;
+    }
 
     @media all and (min-width: 1280px) {
-      padding-top: 60px;
+      padding: 60px 85px 60px;
     }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 45px;
-
-      @media all and (min-width: 768px) {
-        flex-direction: row;
-        margin-bottom: 60px;
-      }
+    //Super size screen
+    @media all and (min-width: 1800px) {
+      padding: 200px 85px;
+      row-gap: 50px;
     }
+  }
 
-    #reasons {
-      @include mixh2();
+  #reasons {
+    @include mixh2();
+    text-align: center;
+
+    @media all and (min-width: 768px) {
+      grid-column: span 3;
     }
+  }
 
+  a {
     .button {
-      font-family: $font-main;
-      font-size: $size-font-body;
-      font-weight: 500;
-      line-height: 45px;
+      // hereda propiedades del btn de arriba
       color: $color-white;
-      text-transform: capitalize;
-      border-radius: 2em;
-      border-style: solid;
       background-color: $color-bright-orange;
-      padding: 0 25px;
       transition: color ease 0.8s;
 
       &:hover {
@@ -132,14 +135,14 @@ body {
         background-color: $color-white;
         border-color: $color-bright-orange;
       }
+    }
 
-      @media all and (min-width: 768px) {
-        padding: 0 33px;
-      }
+    @media all and (min-width: 768px) {
+      grid-column: span 3;
+    }
 
-      @media all and (min-width: 1280px) {
-        padding: 0 63px;
-      }
+    @media all and (min-width: 1280px) {
+      margin-top: 15px;
     }
   }
 }
