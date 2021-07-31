@@ -125,6 +125,7 @@ body {
       border-style: solid;
       background-color: $color-bright-orange;
       padding: 0 25px;
+      transition: color ease 0.8s;
 
       &:hover {
         color: $color-bright-orange;
