@@ -2,7 +2,7 @@
 
 **Modulo 1 - Evaluación final Iratxetos**
 ¡Hola, bienvenid@s a mi repo del ejercicio final del Módulo 1!
-Van a poder acceder a la página clicando a la derecha en el _About_ 👉
+Para acceder a la página hay que clicar a la derecha en el _About_ 👉
 
 Comenzando 🚀
 Para entender el repositorio vais a encontrar 2 ramas:
@@ -14,13 +14,13 @@ Para entender el repositorio vais a encontrar 2 ramas:
 Herramientas 🔧
 El código está hecho en lenguaje .html y trabajé los estilos con el preprocesador de CSS, Sass.
 
-Para poder instalarlo te recomiendo descargarte el Adalab Web Starter Kit y seguir los pasos indicados en su readme.
+Para poder instalarlo os recomiendo descargaros el Adalab Web Starter Kit y seguir los pasos indicados en su _Readme_.
 https://github.com/Adalab/adalab-web-starter-kit
 
 Código ⌨️
-Vais a ver que el código está dividido en _Parciales_ tanto en la parte del html como la parte de estilos.
+El código está dividido en _Parciales_ tanto en la parte del html como la parte de estilos.
 
-Está dividido en base a sus etiquetas semánticas principales.
+Las divisiones están hechas en base a sus etiquetas semánticas principales.
 
 Construido con 🛠️
 
@@ -31,7 +31,7 @@ Autora ✒️
 Iratxe Martin Perez
 
 Dudas ☝
-En caso de haber dudas podeis escribirme directamente a mi mail iratxetxu@gmail.com.
+En caso de haber dudas, escribirme directamente a mi mail iratxetxu@gmail.com.
 
 Adicionalmente 🎁
 Profes, gracias por las clases, la disponibilidad a responder consultas y sobre todo, las tutorias personales, han sido de gran ayuda 🤓.
