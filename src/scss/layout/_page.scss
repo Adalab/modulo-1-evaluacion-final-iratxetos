@@ -57,35 +57,36 @@ body {
       }
     }
   }
+  a {
+    .button {
+      font-family: $font-main;
+      font-size: $size-font-body;
+      font-weight: 500;
+      line-height: 45px;
+      color: $color-bright-orange;
+      text-transform: capitalize;
+      border-radius: 2em;
+      border-width: 2px;
+      border-color: $color-bright-orange;
+      border-style: solid; /*evitar el degradé del borde*/
+      background-color: transparent;
+      padding: 1px 25px;
+      transition: color ease 2s, background-color ease 2s;
 
-  .button {
-    font-family: $font-main;
-    font-size: $size-font-body;
-    font-weight: 500;
-    line-height: 45px;
-    color: $color-bright-orange;
-    text-transform: capitalize;
-    border-radius: 2em;
-    border-width: 2px;
-    border-color: $color-bright-orange;
-    border-style: solid; /*evitar el degradé del borde*/
-    background-color: transparent;
-    padding: 1px 25px;
+      &:hover {
+        color: $color-white;
+        background-color: $color-bright-orange;
+      }
 
-    &:hover {
-      color: $color-white;
-      background-color: $color-bright-orange;
-    }
+      @media all and (min-width: 768px) {
+        padding: 0 33px;
+      }
 
-    @media all and (min-width: 768px) {
-      padding: 0 33px;
-    }
-
-    @media all and (min-width: 1280px) {
-      padding: 0 67px;
+      @media all and (min-width: 1280px) {
+        padding: 0 67px;
+      }
     }
   }
-
   &__section2 {
     background-color: #eff9ff;
     display: grid;
@@ -128,7 +129,6 @@ body {
       // hereda propiedades del btn de arriba
       color: $color-white;
       background-color: $color-bright-orange;
-      transition: color ease 0.8s;
 
       &:hover {
         color: $color-bright-orange;

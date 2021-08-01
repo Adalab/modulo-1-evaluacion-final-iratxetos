@@ -4,7 +4,6 @@
   background-image: url(../images/cover.jpg);
   /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
   background-position: center center;
-  /* Para que la imagen de fondo no se repita */
   background-repeat: no-repeat;
   /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
   background-attachment: fixed;
@@ -42,6 +41,10 @@
     justify-content: flex-end;
     position: absolute;
     top: 50%;
+
+    @media all and (min-width: 768px) {
+      top: 30%;
+    }
   }
 
   &__title {
@@ -51,8 +54,6 @@
     color: $color-white;
     line-height: $line-height-title;
     word-spacing: 100vw;
-
-    // margin: 10px 15px;
 
     @media all and (min-width: 768px) {
       font-size: 80px;
