@@ -91,6 +91,7 @@
     animation-name: intro1;
     animation-duration: 4s;
     animation-iteration-count: 1;
+    animation-timing-function: linear;
 
     @keyframes intro1 {
       from {

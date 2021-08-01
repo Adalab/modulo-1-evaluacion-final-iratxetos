@@ -1,6 +1,7 @@
 body {
   font-family: $font-main;
   font-size: 18px;
+  background-color: $color-ice-blue;
 }
 
 .main {
@@ -9,6 +10,7 @@ body {
     padding-right: 15px;
     padding-top: 30px;
     padding-bottom: 45px;
+    background-color: $color-white;
 
     @media all and (min-width: 768px) {
       padding-left: 39px;
@@ -88,7 +90,7 @@ body {
     }
   }
   &__section2 {
-    background-color: #eff9ff;
+    background-color: $color-ice-blue;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
