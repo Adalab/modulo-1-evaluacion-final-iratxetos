@@ -88,5 +88,20 @@
   &__row--image {
     @include mixarrowimage();
     margin: 20px;
+    animation-name: intro1;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+
+    @keyframes intro1 {
+      from {
+        transform: rotate(-180deg);
+        opacity: 0;
+        color: white;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
   }
 }
