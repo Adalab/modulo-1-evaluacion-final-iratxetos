@@ -5,6 +5,39 @@ body {
 }
 
 .main {
+  &__anonymousproxy {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-bright-orange;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    padding: 20px;
+
+    .newh2 {
+      @include mixh2();
+      padding: 20px;
+    }
+
+    .trello {
+      text-decoration: none;
+
+      &:visited {
+        color: $color-white;
+      }
+    }
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: $color-dark-grey-blue;
+
+      .newh2 {
+        padding: 0;
+      }
+    }
+  }
+
   &__section1 {
     padding-left: 15px;
     padding-right: 15px;
